@@ -18,4 +18,4 @@ steps:
   condition: and(succeeded(), in(variables['agent.os'], 'darwin', 'linux'))
   displayName: Greeting from macOS or Linux machine
   
-  
+ 
