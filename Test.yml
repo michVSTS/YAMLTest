@@ -20,7 +20,7 @@ steps:
   
 schedules: 
 - cron: "0 0 * * *" 
-  displayName: Daily midnight build 
+  displayName: Daily midnight build 1
   branches: 
     include: 
     - master 
