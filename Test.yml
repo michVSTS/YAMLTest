@@ -28,7 +28,7 @@ trigger:
 
 schedules: 
 - cron: "0 0 * * *" 
-  displayName: Daily midnight build 1234
+  displayName: Daily midnight build 12345
   branches: 
     include: 
     - master 
