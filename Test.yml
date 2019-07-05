@@ -1,13 +1,5 @@
 steps:
 
-trigger:
-    branches:
-      include:
-      - master
-    paths:
-      include:
-      - README.md
-
 - script: |
     echo hello world from %MyName%
     echo Agent.HomeDirectory is %CD%
@@ -25,7 +17,15 @@ trigger:
     MyName: $(Agent.MachineName)
   condition: and(succeeded(), in(variables['agent.os'], 'darwin', 'linux'))
   displayName: Greeting from macOS or Linux machine
-  
+
+trigger:
+    branches:
+      include:
+      - master
+    paths:
+      include:
+      - README.md
+
 schedules: 
 - cron: "0 0 * * *" 
   displayName: Daily midnight build 1
