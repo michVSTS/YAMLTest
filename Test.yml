@@ -1,5 +1,13 @@
 steps:
 
+trigger:
+    branches:
+      include:
+      - master
+    paths:
+      include:
+      - README.md
+
 - script: |
     echo hello world from %MyName%
     echo Agent.HomeDirectory is %CD%
