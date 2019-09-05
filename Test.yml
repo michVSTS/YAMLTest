@@ -1,6 +1,6 @@
 steps:
 
-- script: |
+- script: | 
     echo hello world from %MyName%
     echo Agent.HomeDirectory is %CD%
   workingDirectory: $(Agent.HomeDirectory)
