@@ -38,7 +38,7 @@ schedules:
 - cron: "* * * * *" 
   displayName: Constant Build
   branches: 
-    include: 
+    include:  
     - releases/* 
   batch: true 
   always: true 
