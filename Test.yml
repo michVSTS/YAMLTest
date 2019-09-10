@@ -8,7 +8,7 @@ steps:
     MyName: $(Agent.MachineName)
   condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
   displayName: Greeting from Windows machine
-
+ 
 - script: |
     echo hello world from $MyName
     echo Agent.HomeDirectory is $PWD
