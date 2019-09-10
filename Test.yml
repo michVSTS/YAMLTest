@@ -4,7 +4,7 @@ steps:
     echo hello world from %MyName%
     echo Agent.HomeDirectory is %CD%
   workingDirectory: $(Agent.HomeDirectory)  
-  env: 
+  env:  
     MyName: $(Agent.MachineName)
   condition: and(succeeded(), eq(variables['agent.os'], 'windows_nt'))
   displayName: Greeting from Windows machine 
